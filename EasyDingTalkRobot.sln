@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyDingTalk", "EasyDingTalk\EasyDingTalk.csproj", "{0D9F0217-C27C-45E0-813F-05201CD49C7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{46596D42-9C12-405E-A251-DF4A25432AD2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyDingTalk.Text", "Samples\EasyDingTalk.Text\EasyDingTalk.Text.csproj", "{91E18B77-A89C-4D81-92B4-56986C643653}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D9F0217-C27C-45E0-813F-05201CD49C7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9F0217-C27C-45E0-813F-05201CD49C7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9F0217-C27C-45E0-813F-05201CD49C7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9F0217-C27C-45E0-813F-05201CD49C7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91E18B77-A89C-4D81-92B4-56986C643653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E18B77-A89C-4D81-92B4-56986C643653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E18B77-A89C-4D81-92B4-56986C643653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E18B77-A89C-4D81-92B4-56986C643653}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91E18B77-A89C-4D81-92B4-56986C643653} = {46596D42-9C12-405E-A251-DF4A25432AD2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {225B1929-1BDE-4339-8456-6807A03167E9}
+	EndGlobalSection
+EndGlobal
