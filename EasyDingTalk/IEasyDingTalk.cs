@@ -11,5 +11,6 @@ namespace EasyDingTalk
         string RequestUrl { get; }
 
         TResult SendMessage(TMessage message);
+        Task<TResult> SendMessageAsync(TMessage message);
     }
 }
