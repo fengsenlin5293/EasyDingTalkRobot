@@ -17,6 +17,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDingTalk.ActionCard", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyDingTalk.FeedCard", "Samples\EasyDingTalk.FeedCard\EasyDingTalk.FeedCard.csproj", "{920F745C-D308-465E-84F2-16677D4C0E25}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{382322F2-0322-4F1D-93DC-9C31B6F674BB}"
+	ProjectSection(SolutionItems) = preProject
+		Images\ActionCardMulti.png = Images\ActionCardMulti.png
+		Images\ActionCardSingle.png = Images\ActionCardSingle.png
+		Images\FeedCardMessage.png = Images\FeedCardMessage.png
+		Images\LinkMessage.png = Images\LinkMessage.png
+		Images\MarkdownMessage.png = Images\MarkdownMessage.png
+		Images\TextMessage.png = Images\TextMessage.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
