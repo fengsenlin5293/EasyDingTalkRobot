@@ -1,7 +1,6 @@
 # EasyDingTalkRobot
 
 如果喜欢它，并且能够帮到您，希望可以给一个Star⭐，非常感谢 🙏。
-[![Vercel](https://img.shields.io/github/deployments/devrsi0n/chirpy/production?logo=vercel)](https://github.com/devrsi0n/chirpy/deployments)
 
 ## 创建钉钉自定义机器人
 
