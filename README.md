@@ -36,7 +36,7 @@
            <img src="https://user-images.githubusercontent.com/16472159/234191567-e96d8772-fc11-4ba2-8e47-e61e3f32b493.png" alt="ActionCard-整体跳转" width=488><center style="font-size:14px;text-decoration:underline">ActionCard-整体跳转</center> 
         </td>
         <td>
-         <img src="https://user-images.githubusercontent.com/16472159/234026471-7d41b043-8ed3-4a58-8f36-aab742a12c52.png" alt="ActionCard-独立跳转"><center style="font-size:14px;text-decoration:underline">ActionCard-整体跳转</center> 
+         <img src="https://user-images.githubusercontent.com/16472159/234026471-7d41b043-8ed3-4a58-8f36-aab742a12c52.png" alt="ActionCard-独立跳转"><center style="font-size:14px;text-decoration:underline">ActionCard-独立跳转</center> 
         </td>
     </tr>
 </table>
