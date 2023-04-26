@@ -1,7 +1,6 @@
 # EasyDingTalkRobot
 
-![visitor badge](https://visitor-badge.glitch.me/badge?page_id=fengsenlin5293.EasyDingTalkRobot&right_color=green&left_text=Visitors)
-
+![visitor](https://visitor-badge.glitch.me/badge?page_id=fengsenlin5293.EasyDingTalkRobot&right_color=green&left_text=Visitors)
 
 如果喜欢它，并且能够帮到您，希望可以给一个Star⭐，非常感谢 🙏。
 
@@ -55,7 +54,7 @@
 ![FeedCardMessage](https://user-images.githubusercontent.com/16472159/234027379-1ebd406a-cb31-4211-b39e-9edc7b2bb88c.png)
 
 
- ## Star History
+ ## ⭐Star History
 
 <p align="center">
   <a href="https://star-history.com/#fengsenlin5293/EasyDingTalkRobot&Date">
