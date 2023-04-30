@@ -4,7 +4,7 @@
 
 如果喜欢它，并且能够帮到您，希望可以给一个Star⭐，非常感谢 🙏。
 
-## 创建钉钉自定义机器人
+## 🤖创建钉钉自定义机器人
 
 <img src="https://help-static-aliyun-doc.aliyuncs.com/assets/img/zh-CN/5750865761/p556317.gif">
 <details>
@@ -16,7 +16,7 @@
 
 </details>
 
-## 消息类型预览
+## 📤消息类型预览
 
 * TextMessage
 
@@ -53,8 +53,59 @@
 
 ![FeedCardMessage](https://user-images.githubusercontent.com/16472159/234027379-1ebd406a-cb31-4211-b39e-9edc7b2bb88c.png)
 
+## ⚙️如何使用
 
- ## ⭐Star History
+* **具体类型消息内容：**
+``` C#
+var textmsg = new TextMessage
+{
+    content = $"Hello, 钉钉!"
+};
+```
+上面消息为`TextMessage`类型，还有其他消息类型：`LinkMessage`、`MarkdownMessage`、`ActionCardMessage`、`FeedCardMessage`，其他消息类型可参考`Samples`文件夹里的例子。
+
+* **完整消息内容：**
+``` C#
+var message = new Message
+{
+    Body = textmsg,
+    at = new At
+    {
+        isAtAll = true
+    },
+    msgtype = textmsg.msgtype,
+};
+```
+
+* **发送消息**
+  
+1. 自定义关键字   
+   ``` C#
+    EasyDingTalk easyDingTalk = new EasyDingTalk();
+    var rst = easyDingTalk.SendMessage(message);
+   ```
+   如果`安全设置`勾选并设置了自定义关键字，则需要在消息内容里面包含你所设置的关键字
+   
+2. 加签
+   ``` C#
+    EasyDingTalkSecret easyDingTalkSecret = new EasyDingTalkSecret();
+    var rstSecret = easyDingTalkSecret.SendMessage(message);
+   ```
+   如果`安全设置`勾选了`加签`，则需要在`settings.json`文件内配置`secret`的值，用于签名计算。
+
+* **配置`settings.json`**
+  ``` json
+  {
+    "host": "https://oapi.dingtalk.com/robot/send",
+    "access_token": "xxxxxx",
+    "secret": "xxxxxx"
+  }
+  ``` 
+  **`access_token`**: 为添加机器人后自动生成的`Webhook`后面的<i>access_token=**xxxxxx**</i>值。
+
+  **`secret`**: 为`安全设置`勾选了`加签`后自动生成的密钥。
+
+## ⭐Star History
 
 <p align="center">
   <a href="https://star-history.com/#fengsenlin5293/EasyDingTalkRobot&Date">

@@ -14,6 +14,7 @@ namespace EasyDingTalk
     public class EasyDingTalkSecret : IEasyDingTalk<Message, MessageResult>
     {
         private string _secret;
+        private DateTime _startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
 
         #region constructor
         public EasyDingTalkSecret(string host, string access_token, string secret)
@@ -25,7 +26,7 @@ namespace EasyDingTalk
         public EasyDingTalkSecret()
         {
             var settingsPath = SettingsUtil.ResolvePath("settings.json");
-            var settings = SettingsUtil.GetSettingFromJsonFile(settingsPath);            
+            var settings = SettingsUtil.GetSettingFromJsonFile(settingsPath);
             RequestUrl = $"{settings.host}?access_token={settings.access_token}";
 
             _secret = settings.secret;
@@ -37,13 +38,13 @@ namespace EasyDingTalk
         public string RequestUrl { get; }
 
         public MessageResult SendMessage(Message message)
-        {         
+        {
             string url = CreateUrl();
             return url.PostJsonAsync(message).ReceiveJson<MessageResult>().Result;
         }
 
         public Task<MessageResult> SendMessageAsync(Message message)
-        {        
+        {
             string url = CreateUrl();
             return RequestUrl.PostJsonAsync(message).ReceiveJson<MessageResult>();
         }
@@ -60,10 +61,10 @@ namespace EasyDingTalk
             return url;
         }
 
-        DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
+
         private string GetTimeStamp()
         {
-            return (Convert.ToInt64((DateTime.Now - startTime).TotalMilliseconds)).ToString();
+            return (Convert.ToInt64((DateTime.Now - _startTime).TotalMilliseconds)).ToString();
         }
 
         private string GetSign(string secret, string timestamp)
