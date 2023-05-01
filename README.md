@@ -1,5 +1,6 @@
 # EasyDingTalkRobot
 
+[![GitHub Stars](https://img.shields.io/github/stars/fengsenlin5293/EasyDingTalkRobot?style=social)](https://github.com/fengsenlin5293/EasyDingTalkRobot)
 ![visitor](https://visitor-badge.glitch.me/badge?page_id=fengsenlin5293.EasyDingTalkRobot&right_color=green&left_text=Visitors)
 
 如果喜欢它，并且能够帮到您，希望可以给一个Star⭐，非常感谢 🙏。
