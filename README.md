@@ -32,10 +32,6 @@
 
 *   ActionCardMessage
 
-
-
-
-
  <table style="margin-left: auto; margin-right: auto;">
     <tr>
         <td>
@@ -53,7 +49,7 @@
 
 ![FeedCardMessage](https://user-images.githubusercontent.com/16472159/234027379-1ebd406a-cb31-4211-b39e-9edc7b2bb88c.png)
 
-## ⚙️如何使用
+## 💡如何使用
 
 * **具体类型消息内容：**
 ``` C#
@@ -101,7 +97,7 @@ var message = new Message
     "secret": "xxxxxx"
   }
   ``` 
-  **`access_token`**: 为添加机器人后自动生成的`Webhook`后面的<i>access_token=**xxxxxx**</i>值。
+  **`access_token`**: 为添加机器人后自动生成的`Webhook`后面的<i>access_token</i>=**xxxxxx**值。
 
   **`secret`**: 为`安全设置`勾选了`加签`后自动生成的密钥。
 
